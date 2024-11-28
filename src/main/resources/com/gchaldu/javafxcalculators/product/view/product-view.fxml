@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="553.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gchaldu.javafxcalculators.calculators.controller.CalculadoraController">
+   <children>
+      <Pane fx:id="panel" layoutX="66.0" layoutY="32.0" prefHeight="494.0" prefWidth="522.0">
+         <children>
+            <Button fx:id="btn1" layoutX="56.0" layoutY="86.0" mnemonicParsing="false" onAction="#onBtn1" prefHeight="52.0" prefWidth="88.0" text="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+             <Button fx:id="btn2" layoutX="165.0" layoutY="86.0" mnemonicParsing="false" onAction="#onBtn2" prefHeight="52.0" prefWidth="88.0" text="2">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+             <Button fx:id="btn3" layoutX="269.0" layoutY="86.0" mnemonicParsing="false" onAction="#onBtn3" prefHeight="52.0" prefWidth="88.0" text="3">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+
+             <Button fx:id="btn4" layoutX="56.0" layoutY="191.0" mnemonicParsing="false" onAction="#onBtn4" prefHeight="52.0" prefWidth="88.0" text="4">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+
+             <Button fx:id="btn5" layoutX="165.0" layoutY="191.0" mnemonicParsing="false" onAction="#onBtn5" prefHeight="52.0" prefWidth="88.0" text="5">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+             <Button fx:id="btn6" layoutX="269.0" layoutY="191.0" mnemonicParsing="false" onAction="#onBtn6" prefHeight="52.0" prefWidth="88.0" text="6">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+             <Button fx:id="btn7" layoutX="56.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBtn7" prefHeight="52.0" prefWidth="88.0" text="7">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+
+             <Button fx:id="btn8" layoutX="165.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBtn8" prefHeight="52.0" prefWidth="88.0" text="8">
+                 <font>
+                     <Font size="31.0" />
+                 </font>
+             </Button>
+             <Button fx:id="btn9" layoutX="269.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBtn9" prefHeight="52.0" prefWidth="88.0" text="9">
+                 <font>
+                     <Font size="31.0" />
+                 </font>
+             </Button>
+             <Button fx:id="btn0" layoutX="56.0" layoutY="386.0" mnemonicParsing="false" onAction="#onBtn0" prefHeight="81.0" prefWidth="198.0" text="0">
+                 <font>
+                     <Font size="31.0" />
+                 </font>
+             </Button>
+             <Button fx:id="btnMas" layoutX="379.0" layoutY="86.0" mnemonicParsing="false" onAction="#onBtnMas" prefHeight="52.0" prefWidth="88.0" text="+">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+
+             <Button fx:id="btnMenos" layoutX="379.0" layoutY="191.0" mnemonicParsing="false" onAction="#onBtnMenos" prefHeight="52.0" prefWidth="88.0" text="-">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+             <Button fx:id="btnMul" layoutX="379.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBtnMultiplicar" prefHeight="52.0" prefWidth="88.0" text="*">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+             <Button fx:id="btnDiv" layoutX="379.0" layoutY="401.0" mnemonicParsing="false" onAction="#onBtnDividir" prefHeight="52.0" prefWidth="88.0" text="/">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+             <Button fx:id="btnIgual" layoutX="269.0" layoutY="386.0" mnemonicParsing="false" onAction="#onBtnIgual" prefHeight="52.0" prefWidth="88.0" text="=" textFill="#eb19ee">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Button>
+
+            <TextField fx:id="txtres" layoutX="56.0" layoutY="36.0" prefHeight="25.0" prefWidth="411.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
