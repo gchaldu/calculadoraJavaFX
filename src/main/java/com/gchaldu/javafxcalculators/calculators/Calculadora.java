@@ -15,27 +15,27 @@ public class Calculadora {
     private Long cero=0l;
     private Long nueve=9l;
 
-    public Double suma( Integer numero1){
+    public Double suma( Double numero1){
         return resultado = resultado + numero1;
     }
 
-    public Double resta( Integer numero1){
+    public Double resta( Double numero1){
         return resultado -= numero1;
     }
 
-    public Double dividir( Integer numero1){
+    public Double dividir( Double numero1){
         if (numero1 == 0) {
             throw new ArithmeticException("No se puede dividir por cero.");
         }
         if(resultado==0){
-            return this.resultado= Double.parseDouble(numero1.toString());
+            return this.resultado= numero1;
         }
         return resultado /= numero1;
     }
 
-    public Double multiplicar( Integer numero1){
+    public Double multiplicar( Double numero1){
         if(resultado==0){
-            return this.resultado= Double.parseDouble(numero1.toString());
+            return this.resultado= numero1;
         }
         return resultado *= numero1;
     }

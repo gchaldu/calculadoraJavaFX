@@ -86,6 +86,7 @@ public class CalculadoraController {
     @FXML
     protected void onBtnIgual(){
         this.onOperacion();
+        this.operacion="";
     }
 
     private String operacion="";
@@ -93,25 +94,25 @@ public class CalculadoraController {
     protected void onOperacion() {
         try {
             if(this.operacion.equals("+")){
-                int valorActual = Integer.parseInt(txtres.getText());
+                Double valorActual = Double.parseDouble(txtres.getText());
                 this.calculadora.suma(valorActual);
                 txtres.setText("");
                 this.txtres.setText(String.valueOf(this.calculadora.getResultado()));
                 this.otra=true;
             }else if(this.operacion.equals("-")){
-                int valorActual = Integer.parseInt(txtres.getText());
+                Double valorActual = Double.parseDouble(txtres.getText());
                 this.calculadora.resta(valorActual);
                 txtres.setText("");
                 this.txtres.setText(String.valueOf(this.calculadora.getResultado()));
                 this.otra=true;
             }else if(this.operacion.equals("*")){
-                int valorActual = Integer.parseInt(txtres.getText());
+                Double valorActual = Double.parseDouble(txtres.getText());
                 this.calculadora.multiplicar(valorActual);
                 txtres.setText("");
                 this.txtres.setText(String.valueOf(this.calculadora.getResultado()));
                 this.otra=true;
             }else if(this.operacion.equals("/")){
-                int valorActual = Integer.parseInt(txtres.getText());
+                Double valorActual = Double.parseDouble(txtres.getText());
                 this.calculadora.dividir(valorActual);
                 txtres.setText("");
                 this.txtres.setText(String.valueOf(this.calculadora.getResultado()));

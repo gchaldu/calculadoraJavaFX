@@ -4,9 +4,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="553.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gchaldu.javafxcalculators.calculators.controller.CalculadoraController">
+<AnchorPane prefHeight="526.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.gchaldu.javafxcalculators.calculators.controller.CalculadoraController">
    <children>
-      <Pane fx:id="panel" layoutX="66.0" layoutY="32.0" prefHeight="494.0" prefWidth="522.0">
+      <Pane fx:id="panel" layoutX="-11.0" layoutY="8.0" prefHeight="517.0" prefWidth="698.0">
          <children>
             <Button fx:id="btn1" layoutX="56.0" layoutY="86.0" mnemonicParsing="false" onAction="#onBtn1" prefHeight="52.0" prefWidth="88.0" text="1">
                <font>
