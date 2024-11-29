@@ -50,6 +50,16 @@ public class CalculadoraController {
     @FXML
     private TextField txtres;
 
+    @FXML
+    public void initialize() {
+        // Validación: Solo permitir números
+        txtres.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtres.setText(newValue.replaceAll("[^\\d]", "")); // Reemplaza los caracteres no numéricos
+            }
+        });
+    }
+
     //PARA SABER CUANDO LIMPIAR txtres
     private boolean otra=false;
 
